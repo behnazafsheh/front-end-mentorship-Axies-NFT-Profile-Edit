@@ -1,0 +1,69 @@
+:root {
+  --bg-color: #14141f;
+  --dark-color: rgb(45, 44, 51);
+  --gray-color: rgb(122, 122, 122);
+  --darkGray-color: rgb(51, 52, 67);
+  --black-color: rgb(0, 0, 0);
+  --white-color: rgb(250, 248, 255);
+  --orange-color: rgb(250, 196, 141);
+  --lightPurple: rgb(231, 229, 253);
+  --cream-color: rgb(254, 250, 241);
+  --blue-color: rgb(78, 63, 238);
+  --red-color: rgb(241, 97, 74);
+  --green-color: rgb(54, 180, 59);
+  --aqua-color: rgb(94, 212, 213);
+  --pink-color: rgb(254, 244, 239);
+  --purple-color: rgb(162, 77, 218);
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 62.5%;
+  font-family: "Urbanist", "Roboto", sans-serif;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+}
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 1rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+i {
+  color: var(--white-color);
+  font-size: 1.5rem;
+}
+
+@mixin FlexRow {
+  display: flex;
+  flex-direction: row;
+}
+@mixin FlexColumn {
+  display: flex;
+  flex-direction: column;
+}
