@@ -469,7 +469,7 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 5%;
+  margin-left: 3rem;
   position: relative;
 }
 
@@ -479,7 +479,7 @@ i {
 }
 
 .header-nav-bar ul li {
-  padding: 10px 30px;
+  padding: 10px 20px;
   position: relative;
 }
 
@@ -493,8 +493,6 @@ i {
 
 .header-nav-bar ul li a:hover {
   border-radius: 1rem;
-  background-color: var(--gray-color);
-  padding: 1rem;
 }
 
 .sub-menu-1 {
@@ -539,10 +537,14 @@ i {
 
 .header-search-bar {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   justify-content: center;
   margin: 1rem 2rem;
   align-items: center;
+}
+
+.header-search-bar:hover {
+  cursor: pointer;
 }
 
 .header-search-bar i {
@@ -562,6 +564,7 @@ i {
 
 .header-wallet:hover {
   box-shadow: 0px 0px 10px var(--blue-color);
+  cursor: pointer;
 }
 
 .header-wallet p {
@@ -649,7 +652,7 @@ i {
   border-radius: 5rem;
   padding: 0.8rem;
   position: absolute;
-  right: 250px;
+  right: 285px;
   top: 10px;
   display: flex;
   text-align: center;
