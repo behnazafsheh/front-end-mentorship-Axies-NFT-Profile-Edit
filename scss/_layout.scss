@@ -351,8 +351,13 @@
   background-color: #cccccc;
   background-size: cover;
   position: relative;
-  margin: 2rem;
+  margin: 1.9rem;
+  overflow: hidden;
 }
+// .drop-zone__thumb>div{
+//   overflow: hidden;
+// }
+
 
 .drop-zone__thumb::after {
   content: attr(data-label);
